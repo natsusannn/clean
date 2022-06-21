@@ -6,26 +6,22 @@
  <meta name="description" content="ディスクリプションを入力">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="style.css">
- <script src="main.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  </head>
  <body>
- <!----- header----->
- <header>ヘッダー</header>
- <nav>ナビ</nav>
- <!----- /header ----->
 
- <!----- main ----->
- <article>
- <h1>タイトル</h1>
- <section>
- <h2>見出し２</h2>
- <p>コンテンツの内容</p>
- </section>
- </article>
- <!----- /main ----->
+  <!----- main ----->
+   <h1>お掃除リスト</h1>
+  <form>
+    名前<input class="task_value" type="text" /><br>
+    日にち<input class="task_day" type="text"><br>
+    <button id="tuika">追加</button>
+    <button id="sakujo">削除</button>
+    <button id=seiretu>整列</button>
+  </form>
+  <h2>一覧</h2>
+  <ul class="task_list"></ul>
 
- <!----- footer ----->
- <footer>フッター</footer>
- <!----- /footer ----->
+ <script src="main.js"></script>
  </body>
 </html>
